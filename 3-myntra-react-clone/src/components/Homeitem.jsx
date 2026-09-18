@@ -36,6 +36,7 @@
 // }
 // export default Homeitem
 
+// this code is only adding animation effect motions etc otherwise the fuctionality is same as upper one
 
 import {
   useDispatch,

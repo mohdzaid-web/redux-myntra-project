@@ -93,6 +93,8 @@
 
 // export default Fetchitem;
 
+// this code is only adding animation effect motions etc otherwise the fuctionality is same as upper one
+
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";

@@ -21,6 +21,7 @@
 
 // export default App
 
+// this code is only adding animation effect motions etc otherwise the fuctionality is same as upper one
 
 // import Header from "../components/Header";
 import Header from "../components/Hearder";
