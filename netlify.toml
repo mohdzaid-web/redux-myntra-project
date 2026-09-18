@@ -1,0 +1,4 @@
+[build]
+  base = "3-myntra-react-clone"
+  command = "npm run build"
+  publish = "dist"
