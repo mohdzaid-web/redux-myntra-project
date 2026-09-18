@@ -120,7 +120,7 @@ const Fetchitem = () => {
 
     console.log("STARTING FETCH");
 
-    fetch("http://localhost:8080/items")
+  fetch(`${import.meta.env.VITE_API_URL}/items`)
       .then((res) => {
         console.log("RESPONSE RECEIVED", res);
 
