@@ -112,17 +112,17 @@ const Fetchitem = () => {
       fetchedstatus.fetchdone ||
       fetchedstatus.currentlyfetching
     ) {
-      console.log("FETCH STOPPED BY IF");
+     
       return;
     }
 
     dispatch(fetchedAction.markfatchingstarted());
 
-    console.log("STARTING FETCH");
+    
 
   fetch(`${import.meta.env.VITE_API_URL}/items`)
       .then((res) => {
-        console.log("RESPONSE RECEIVED", res);
+      
 
         if (!res.ok) {
           throw new Error(`HTTP error: ${res.status}`);
@@ -131,7 +131,7 @@ const Fetchitem = () => {
         return res.json();
       })
       .then((data) => {
-        console.log("API DATA:", data);
+       
 
         dispatch(
           itemsAction.addinitialitem(data.items[0])
@@ -141,8 +141,7 @@ const Fetchitem = () => {
         dispatch(fetchedAction.markfatchingfinished());
       })
       .catch((error) => {
-        console.error("FETCH ERROR:", error);
-
+      
         dispatch(
           fetchedAction.markfatchingfinished()
         );
